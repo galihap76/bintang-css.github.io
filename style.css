@@ -1,0 +1,23 @@
+body{
+    background-color: darkblue;
+}
+
+.bintang{
+   position: relative;
+   height: 0;
+   width: 0;
+   border-bottom: 100px solid #FFFF;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+}
+
+.bintang::after{
+    position: absolute;
+    border-top:100px solid #FFFF;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    content:"";
+    top:30px;
+    left:-50px;
+   
+}
